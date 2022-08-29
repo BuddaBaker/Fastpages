@@ -1,7 +1,7 @@
 ⚠️ Do not delete this directory!  You can delete the blog post files in this directory, but you should still keep this directory around as Jekyll expects this folder to exist.
 
 # Github Fast Pages Project
-by Dhruva and Prasith
+Prasith
 [`fastpages`](https://github.com/fastai/fastpages) will automatically convert markdown files saved into this directory as blog posts!
 
 You must save your notebook with the naming convention `YYYY-MM-DD-*.md`.  Examples of valid filenames are:
