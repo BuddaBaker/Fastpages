@@ -7,5 +7,6 @@ permalink: /about/
 Prasith Chilla website powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
+Programmer who loves to expirement with new things. I am a big NFL and NBA fan but especially I am a fan of the Philadelphia Eagles. My favorite player is Malcolm Jenkins
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+<img src="">
