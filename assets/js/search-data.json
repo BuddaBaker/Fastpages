@@ -61,6 +61,17 @@
 
   
       ,"page1": {
+          "title": "Vocab Page",
+          "content": "Hello and Welcome to my Vocab Page . print: print is a way to display messages through python | if else statement: Check if one condition is true, if its not true then do the other code | variables: Sets of numbers/strings that change depending on the function its passed through | .",
+          "url": "https://buddabaker.github.io/Fastpages/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Prasith Chilla website powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://buddabaker.github.io/Fastpages/about/",
@@ -92,7 +103,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://buddabaker.github.io/Fastpages/robots.txt",
