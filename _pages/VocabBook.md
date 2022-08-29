@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Vocab Page
-permalink: /about/
+permalink: /vocab/
 ---
 
 Hello and Welcome to my Vocab Page
