@@ -2,6 +2,28 @@
   
     
         "post0": {
+            "title": "Notes From Alumni",
+            "content": "Notes: . Reflected on what he wanted to do . | Logical thinking background helped with Coding and solving problems . | Keeping motivated is a struggle with the errors that may be thrown at you . | There’s always someone who is better at coding but don’t worry about them and try to be the best you can be . | You will need to incorporate many different skills into CS projects . | Studying in groups will help everyone understand better because of the shared learning . | Many different applications for CS that you can apply for different needs . | Internships are a great way to get more experience . | .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/08/29/Notes-from-Alumni.html",
+            "relUrl": "/2022/08/29/Notes-from-Alumni.html",
+            "date": " • Aug 29, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Business Overview",
+            "content": "Elevator Pitch: Many people have issues with time management about 82% of americans. To fix this I created OTASCA which is an app that creates a schedule for the people and allows them to manage their time better. This app not only plans your important meetings but also schedules work time and other important activities you have going on. . Business Model: My business will be a monthly subscription service charging $5 a month for the basic features and an additional price for the premium features. . Next Steps: The next steps are to create a survey to see if there is interest in the idea and how much the consumers would be willing to pay for this. .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/08/29/Business-Overview.html",
+            "relUrl": "/2022/08/29/Business-Overview.html",
+            "date": " • Aug 29, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Title",
             "content": ". title: Bash Notebook . echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/BuddaBaker/Fastpages.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; .",
             "url": "https://buddabaker.github.io/Fastpages/2022/08/28/bash.html",
@@ -12,18 +34,7 @@
     
   
     
-        ,"post1": {
-            "title": "Notes From Alumni",
-            "content": "Notes: . Reflected on what he wanted to do . | Logical thinking background helped with Coding and solving problems . | Keeping motivated is a struggle with the errors that may be thrown at you . | There’s always someone who is better at coding but don’t worry about them and try to be the best you can be . | You will need to incorporate many different skills into CS projects . | Studying in groups will help everyone understand better because of the shared learning . | Many different applications for CS that you can apply for different needs . | Internships are a great way to get more experience . | .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/08/28/Notes-from-Alumni.html",
-            "relUrl": "/2022/08/28/Notes-from-Alumni.html",
-            "date": " • Aug 28, 2022"
-        }
-        
-    
-  
-    
-        ,"post2": {
+        ,"post3": {
             "title": "NBA Quiz",
             "content": ". title: NBA Quiz . points = 0 answer = input(&quot;Who won the 2021-2022 NBA Championship?&quot;) if answer == &quot;Warriors&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) answer = input(&quot;Which NBA franchise has the most MVP winners?&quot;) if answer == &quot;Celtics&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) answer = input(&quot;Who won the 2021-2022 NBA MVP?&quot;) if answer == &quot;Nikola Jokic&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) answer = input(&quot;Which NBA team(s) has the most rings?&quot;) if answer == &quot;Celtics&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) print(&quot;You got:&quot;, (points/4)*100, &quot;%&quot;) .",
             "url": "https://buddabaker.github.io/Fastpages/2022/08/28/NBAQUIZ.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Title",
             "content": ". title: My first Jupyter Notebook . toc: true | badges: true | comments: true | categories: [jupyter] | title: My First Jypter Notebook | . . print(&quot;Hello World&quot;) . Hello World .",
             "url": "https://buddabaker.github.io/Fastpages/2022/08/28/Fastpages-Post.html",
@@ -45,22 +56,11 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Title",
             "content": ". title: Docx File Post .",
             "url": "https://buddabaker.github.io/Fastpages/2022/08/28/DocxFile.html",
             "relUrl": "/2022/08/28/DocxFile.html",
-            "date": " • Aug 28, 2022"
-        }
-        
-    
-  
-    
-        ,"post5": {
-            "title": "Business Overview",
-            "content": "Elevator Pitch: Many people have issues with time management about 82% of americans. To fix this I created OTASCA which is an app that creates a schedule for the people and allows them to manage their time better. This app not only plans your important meetings but also schedules work time and other important activities you have going on. . Business Model: My business will be a monthly subscription service charging $5 a month for the basic features and an additional price for the premium features. . Next Steps: The next steps are to create a survey to see if there is interest in the idea and how much the consumers would be willing to pay for this. .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/08/28/Business-Overview.html",
-            "relUrl": "/2022/08/28/Business-Overview.html",
             "date": " • Aug 28, 2022"
         }
         
