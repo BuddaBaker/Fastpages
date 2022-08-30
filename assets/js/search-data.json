@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "NBA Quiz",
-            "content": ". title: NBA Quiz . points = 0 answer = input(&quot;Who won the 2021-2022 NBA Championship?&quot;) if answer == &quot;Warriors&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) answer = input(&quot;Which NBA franchise has the most MVP winners?&quot;) if answer == &quot;Celtics&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) answer = input(&quot;Who won the 2021-2022 NBA MVP?&quot;) if answer == &quot;Nikola Jokic&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) answer = input(&quot;Which NBA team(s) has the most rings?&quot;) if answer == &quot;Celtics&quot;: print(&quot;Correct answer!&quot;) points += 1 else: print(&quot;incorrect answer&quot;) print(&quot;You got:&quot;, (points/4)*100, &quot;%&quot;) .",
+            "content": ". title: NBA Quiz . def quiz(): points = 0 questions = [&quot;Who won the 2021-2022 NBA Championship?&quot;, &quot;Which NBA franchise has the most MVP winners?&quot;, &quot;Who won the 2021-2022 NBA MVP?&quot;, &quot;Which NBA team(s) has the most rings?&quot;] answers = [&quot;Warriors&quot;, &quot;Celtics&quot;, &quot;Nikola Jokic&quot;, &quot;Celtics&quot;] num = 0 while num &lt;= 3: answer = input(questions[num]) if answer == answers[num]: print(&quot;Correct&quot;) points = points + 1 else: print(&quot;Incorrect&quot;) num += 1 print(&quot;You got:&quot;, (points/4)*100, &quot;%&quot;) quiz() .",
             "url": "https://buddabaker.github.io/Fastpages/2022/08/28/NBAQUIZ.html",
             "relUrl": "/2022/08/28/NBAQUIZ.html",
             "date": " • Aug 28, 2022"
