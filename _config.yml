@@ -124,3 +124,6 @@ feed:
   
 exclude:
   - settings.ini
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
