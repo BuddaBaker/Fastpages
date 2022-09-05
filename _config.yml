@@ -82,7 +82,7 @@ html_escape:
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
-theme: minima
+theme: hacker
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -124,6 +124,3 @@ feed:
   
 exclude:
   - settings.ini
-minima:
-  skin: dark
-  date_format: "%b %-d, %Y"
