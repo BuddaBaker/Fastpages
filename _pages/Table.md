@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <style>
@@ -29,6 +31,16 @@ table, th, td {
     <td>1</td>
     <td>variables</td>
     <td>Check if one condition is true, if its not true then do the other code</td>
+  </tr>
+   <tr>
+    <td>2</td>
+    <td>lists</td>
+    <td>A sequence of elements that can be edited and called</td>
+  </tr>
+   <tr>
+    <td>2</td>
+    <td>Dictionary</td>
+    <td>A data structure with a key and value which can be edited and called</td>
   </tr>
 </table>
 
