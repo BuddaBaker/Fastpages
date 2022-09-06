@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "HTML Hacks",
-            "content": "toc: true | badges: true | comments: true | categories: [Posts] | title: HTML Hacks | . 1. Findings from theme change: - The theme doesn&#39;t work. It fails to build because of an issue with Jekyll. - The end result is just the regular site, however some of the text has changed to different colors. . &lt;body&gt; &lt;img src=&quot;https://ibb.co/wWbWgKm&quot;&gt; &lt;/body&gt; .",
+            "content": "toc: true | badges: true | comments: true | categories: [Posts] | title: HTML Hacks | . 1. Findings from theme change: - The theme I used was the hacker theme. It made the entire site black with green text. Overall the coloring of the theme looks nice however the pages are not visible. On top of that the posts looks a lot worse as it is displayed as text. . &lt;body&gt; &lt;img src=&quot;https://ibb.co/1vYYg5b&quot;&quot;&gt; &lt;/body&gt; .",
             "url": "https://buddabaker.github.io/Fastpages/2022/09/04/HTMLHacks.html",
             "relUrl": "/2022/09/04/HTMLHacks.html",
             "date": " • Sep 4, 2022"
