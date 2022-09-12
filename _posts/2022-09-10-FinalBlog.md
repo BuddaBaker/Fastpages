@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: true
-description: Hack1(Theme Change)
+description: Week 4 BLog
 categories: [Posts]
 title: HTML Hack 1
 ---
