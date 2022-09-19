@@ -12,7 +12,7 @@ table, th, td {
 </style>
 <body>
 
-<h2>Vocab Table edit</h2>
+<h2>Vocab Table edit more</h2>
 
 <table style="width:100%">
   <tr>
