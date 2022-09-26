@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "",
+            "content": "Quick launch into Variables, Functions, Arrays, IJavaScript HTML, using Jupyter Notebooks . toc:true- comments: true | permalink: /2022/09/20/JavaScript.html | image: /images/javascript.png | categories: [techtalk] | . | Overview | Tutorial | Calculator | Binary | Grades | Graph | Vocab | Snake | . . function logItType(output) { console.log(typeof output, &quot;;&quot;, output); } console.log(&quot;Looking at dynamic nature of types in JavaScript&quot;) logItType(&quot;hello&quot;); // String logItType(2020); // Number logItType([1, 2, 3]); // Object is generic for this Array, which similar to Python List . Failed to start the Kernel. module.js:597 return process.dlopen(module, path._makeLong(filename)); ^ Error: /home/prasithchilla/anaconda3/bin/../lib/libstdc++.so.6: version `GLIBCXX_3.4.29&#39; not found (required by /home/prasithchilla/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq/build/Release/zmq.node) at Error (native) at Object.Module._extensions..node (module.js:597:18) at Module.load (module.js:487:32) at tryModuleLoad (module.js:446:12) at Function.Module._load (module.js:438:3) at Module.require (module.js:497:17) at require (internal/module.js:20:19) at load (/home/prasithchilla/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/index.js:22:10) at Object.&lt;anonymous&gt; (/home/prasithchilla/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq/binding.js:1:105) at Module._compile (module.js:570:32). View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. .",
             "url": "https://buddabaker.github.io/Fastpages/2022/09/25/javascriptutorial.html",
             "relUrl": "/2022/09/25/javascriptutorial.html",
             "date": " • Sep 25, 2022"
@@ -218,7 +218,7 @@
   
       ,"page4": {
           "title": "JSTable",
-          "content": "| Overview | Tutorial | Calculator | Binary | Grades | Graph | Life | Snake | .",
+          "content": "| Overview | Tutorial | Calculator | Binary | Grades | Graph | Vocab | Snake | .",
           "url": "https://buddabaker.github.io/Fastpages/JSTable/",
           "relUrl": "/JSTable/",
           "date": ""
