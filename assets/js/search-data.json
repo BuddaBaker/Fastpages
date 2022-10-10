@@ -2,33 +2,33 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": ". title: My first Jupyter Notebook . toc: true | badges: true | comments: true | categories: [jupyter] | title: My First Jypter Notebook | . . &quot;&quot;&quot; Requests is a HTTP library for the Python programming language. The goal of the project is to make HTTP requests simpler and more human-friendly. &quot;&quot;&quot; &quot;&quot;&quot; RapidAPI is the world&#39;s largest API Marketplace. Developers use Rapid API to discover and connect to thousands of APIs. &quot;&quot;&quot; import requests url = &quot;https://nfl-schedule.p.rapidapi.com/v1/schedules&quot; headers = { &quot;X-RapidAPI-Key&quot;: &quot;71d411b83cmshb7b1cee17c5afa3p1c914ejsnde8d0527c7ad&quot;, &quot;X-RapidAPI-Host&quot;: &quot;nfl-schedule.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers) #print(response.json()) for schedule in response.json().get(&#39;data&#39;): print(schedule[&#39;name&#39;]) print() . Indianapolis Colts at Denver Broncos New York Giants at Green Bay Packers Pittsburgh Steelers at Buffalo Bills Los Angeles Chargers at Cleveland Browns Chicago Bears at Minnesota Vikings Detroit Lions at New England Patriots Seattle Seahawks at New Orleans Saints Miami Dolphins at New York Jets Atlanta Falcons at Tampa Bay Buccaneers Tennessee Titans at Washington Commanders Houston Texans at Jacksonville Jaguars San Francisco 49ers at Carolina Panthers Dallas Cowboys at Los Angeles Rams Philadelphia Eagles at Arizona Cardinals Cincinnati Bengals at Baltimore Ravens Las Vegas Raiders at Kansas City Chiefs .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/10/07/APIHACKS.html",
-            "relUrl": "/2022/10/07/APIHACKS.html",
-            "date": " • Oct 7, 2022"
+            "title": "Notes From Alumni",
+            "content": "Notes: . Reflected on what he wanted to do . | Logical thinking background helped with Coding and solving problems . | Keeping motivated is a struggle with the errors that may be thrown at you . | There’s always someone who is better at coding but don’t worry about them and try to be the best you can be . | You will need to incorporate many different skills into CS projects . | Studying in groups will help everyone understand better because of the shared learning . | Many different applications for CS that you can apply for different needs . | Internships are a great way to get more experience . | .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/10/09/Notes-from-Alumni.html",
+            "relUrl": "/2022/10/09/Notes-from-Alumni.html",
+            "date": " • Oct 9, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "Notes From Alumni",
-            "content": "Notes: . Reflected on what he wanted to do . | Logical thinking background helped with Coding and solving problems . | Keeping motivated is a struggle with the errors that may be thrown at you . | There’s always someone who is better at coding but don’t worry about them and try to be the best you can be . | You will need to incorporate many different skills into CS projects . | Studying in groups will help everyone understand better because of the shared learning . | Many different applications for CS that you can apply for different needs . | Internships are a great way to get more experience . | .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/10/06/Notes-from-Alumni.html",
-            "relUrl": "/2022/10/06/Notes-from-Alumni.html",
-            "date": " • Oct 6, 2022"
+            "title": "Business Overview",
+            "content": "Elevator Pitch: Many people have issues with time management about 82% of americans. To fix this I created OTASCA which is an app that creates a schedule for the people and allows them to manage their time better. This app not only plans your important meetings but also schedules work time and other important activities you have going on. . Business Model: My business will be a monthly subscription service charging $5 a month for the basic features and an additional price for the premium features. . Next Steps: The next steps are to create a survey to see if there is interest in the idea and how much the consumers would be willing to pay for this. .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/10/09/Business-Overview.html",
+            "relUrl": "/2022/10/09/Business-Overview.html",
+            "date": " • Oct 9, 2022"
         }
         
     
   
     
         ,"post2": {
-            "title": "Business Overview",
-            "content": "Elevator Pitch: Many people have issues with time management about 82% of americans. To fix this I created OTASCA which is an app that creates a schedule for the people and allows them to manage their time better. This app not only plans your important meetings but also schedules work time and other important activities you have going on. . Business Model: My business will be a monthly subscription service charging $5 a month for the basic features and an additional price for the premium features. . Next Steps: The next steps are to create a survey to see if there is interest in the idea and how much the consumers would be willing to pay for this. .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/10/06/Business-Overview.html",
-            "relUrl": "/2022/10/06/Business-Overview.html",
-            "date": " • Oct 6, 2022"
+            "title": "Title",
+            "content": ". title: API Hacks . toc: true | badges: true | comments: true | categories: [jupyter] | title: API Hacks | . . &quot;&quot;&quot; Requests is a HTTP library for the Python programming language. The goal of the project is to make HTTP requests simpler and more human-friendly. &quot;&quot;&quot; &quot;&quot;&quot; RapidAPI is the world&#39;s largest API Marketplace. Developers use Rapid API to discover and connect to thousands of APIs. &quot;&quot;&quot; import requests url = &quot;https://nfl-schedule.p.rapidapi.com/v1/schedules&quot; headers = { &quot;X-RapidAPI-Key&quot;: &quot;71d411b83cmshb7b1cee17c5afa3p1c914ejsnde8d0527c7ad&quot;, &quot;X-RapidAPI-Host&quot;: &quot;nfl-schedule.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers) #print(response.json()) for schedule in response.json().get(&#39;data&#39;): print(schedule[&#39;name&#39;]) print() . Indianapolis Colts at Denver Broncos New York Giants at Green Bay Packers Pittsburgh Steelers at Buffalo Bills Los Angeles Chargers at Cleveland Browns Chicago Bears at Minnesota Vikings Detroit Lions at New England Patriots Seattle Seahawks at New Orleans Saints Miami Dolphins at New York Jets Atlanta Falcons at Tampa Bay Buccaneers Tennessee Titans at Washington Commanders Houston Texans at Jacksonville Jaguars San Francisco 49ers at Carolina Panthers Dallas Cowboys at Los Angeles Rams Philadelphia Eagles at Arizona Cardinals Cincinnati Bengals at Baltimore Ravens Las Vegas Raiders at Kansas City Chiefs .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/10/07/APIHACKS.html",
+            "relUrl": "/2022/10/07/APIHACKS.html",
+            "date": " • Oct 7, 2022"
         }
         
     
