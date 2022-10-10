@@ -246,6 +246,17 @@
   
 
   
+      ,"page8": {
+          "title": "Submenu",
+          "content": "API Contact Country . .",
+          "url": "https://buddabaker.github.io/Fastpages/submenu/",
+          "relUrl": "/submenu/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -259,7 +270,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://buddabaker.github.io/Fastpages/robots.txt",
