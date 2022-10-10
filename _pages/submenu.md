@@ -1,3 +1,9 @@
+---
+layout: page
+title: Submenu
+permalink: /submenu/
+---
+
 <html>
 <style>
 table, th, td {
