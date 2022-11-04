@@ -7582,24 +7582,25 @@ The letter a is the 1 letter in the alphabet</pre>
          <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
          <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">}</span>
 <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="s2">&quot;burger&quot;</span><span class="p">])</span>
+
 <span class="c1">#shows the user the menu and prompts them to select an item</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
-<span class="n">cont</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want to keep ordering?&quot;</span><span class="p">)</span>
+
 <span class="n">price</span> <span class="o">=</span> <span class="mi">0</span> 
-<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
-<span class="n">items</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;how many items would you like to order&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="n">items</span><span class="p">:</span>
-    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
+<span class="n">items</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;how many items would you like to order: &quot;</span><span class="p">))</span>
+<span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">items</span><span class="p">:</span> 
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu: &quot;</span><span class="p">)</span>
     <span class="n">price</span> <span class="o">=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+</span> <span class="n">price</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
     
 
 <span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -7612,53 +7613,21 @@ The letter a is the 1 letter in the alphabet</pre>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3.99
-Menu
+<pre>Menu
 burger  $3.99
 fries  $1.99
 drink  $0.99
-3.99
-3.99
-3.99
-3.99
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
+<div class="output_subarea output_stream output_stderr output_text">
 <pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-10-09-Errorfixing.ipynb Cell 10</span> in <span class="ansi-cyan-fg">&lt;cell line: 15&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-10-09-Errorfixing.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13&#39;&gt;14&lt;/a&gt;</span> item = input(&#34;Please select an item from the menu&#34;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-10-09-Errorfixing.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14&#39;&gt;15&lt;/a&gt;</span> while cont == &#34;yes&#34;:
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-10-09-Errorfixing.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span>     item = input(&#34;Please select an item from the menu&#34;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-10-09-Errorfixing.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span>     print(menu[&#34;burger&#34;])
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-10-09-Errorfixing.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=19&#39;&gt;20&lt;/a&gt;</span> #code should add the price of the menu items selected by the user 
+KeyboardInterrupt
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1075</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1071</span> if not self._allow_stdin:
-<span class="ansi-green-intense-fg ansi-bold">   1072</span>     raise StdinNotImplementedError(
-<span class="ansi-green-intense-fg ansi-bold">   1073</span>         &#34;raw_input was called, but this frontend does not support input requests.&#34;
-<span class="ansi-green-intense-fg ansi-bold">   1074</span>     )
-<span class="ansi-green-fg">-&gt; 1075</span> return self._input_request(
-<span class="ansi-green-intense-fg ansi-bold">   1076</span>     str(prompt),
-<span class="ansi-green-intense-fg ansi-bold">   1077</span>     self._parent_ident[&#34;shell&#34;],
-<span class="ansi-green-intense-fg ansi-bold">   1078</span>     self.get_parent(&#34;shell&#34;),
-<span class="ansi-green-intense-fg ansi-bold">   1079</span>     password=False,
-<span class="ansi-green-intense-fg ansi-bold">   1080</span> )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/ipykernel/kernelbase.py:1120</span>, in <span class="ansi-cyan-fg">Kernel._input_request</span><span class="ansi-blue-fg">(self, prompt, ident, parent, password)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1117</span>             break
-<span class="ansi-green-intense-fg ansi-bold">   1118</span> except KeyboardInterrupt:
-<span class="ansi-green-intense-fg ansi-bold">   1119</span>     # re-raise KeyboardInterrupt, to truncate traceback
-<span class="ansi-green-fg">-&gt; 1120</span>     raise KeyboardInterrupt(&#34;Interrupted by user&#34;) from None
-<span class="ansi-green-intense-fg ansi-bold">   1121</span> except Exception:
-<span class="ansi-green-intense-fg ansi-bold">   1122</span>     self.log.warning(&#34;Invalid Message:&#34;, exc_info=True)
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
+</pre>
 </div>
 </div>
 
