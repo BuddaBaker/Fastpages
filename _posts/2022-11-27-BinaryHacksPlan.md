@@ -22,7 +22,30 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ideas:</p>
-<h2 id="--Put-the-numbers-under-each-light-to-show-what-number-you-are-adding">- Put the numbers under each light to show what number you are adding<a class="anchor-link" href="#--Put-the-numbers-under-each-light-to-show-what-number-you-are-adding"> </a></h2>
+<h2 id="--Put-the-numbers-under-each-light-to-show-what-number-you-are-adding">- Put the numbers under each light to show what number you are adding<a class="anchor-link" href="#--Put-the-numbers-under-each-light-to-show-what-number-you-are-adding"> </a></h2><p>Notes:
+Unit 3.1 Variables and Assignments
+Python:</p>
+<ul>
+<li>For number variables you set the name and the value</li>
+<li>Boolean variables are true or false</li>
+<li>You can append to a list to add values to it
+Java:</li>
+<li>Define a variable with var</li>
+<li>const sets a value that doesn't change</li>
+</ul>
+<p>3.2 Data Abstraction
+Python:</p>
+<ul>
+<li>In AP Exams index values start with 1 not 0</li>
+<li>You can break down lists into more lists</li>
+<li>Len gives you how many items are in the list</li>
+<li>Split function splits a string into a list</li>
+<li>The function .join makes a list into a single string 
+Java: </li>
+<li>Combine previous lists to create new lists with new data</li>
+<li>Convert Java output to HTML for a nice table and output</li>
+</ul>
+
 </div>
 </div>
 </div>

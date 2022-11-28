@@ -29,6 +29,7 @@ tags: [html, liquid, javascript]
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>Base 30</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -37,6 +38,7 @@ tags: [html, liquid, javascript]
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="base">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -65,10 +67,11 @@ tags: [html, liquid, javascript]
 </div>
 
 <script>
+
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
-    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
+    const IMAGE_ON = "{{site.baseurl}}/images/light-green.gif";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
 
@@ -89,6 +92,8 @@ tags: [html, liquid, javascript]
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+        //Base 30 conversion
+        document.getElementById('base').innerHTML = parseInt(binary, 2).toString(30);
     }
     //
     function decimal_2_base(decimal, base) {
@@ -96,6 +101,7 @@ tags: [html, liquid, javascript]
         // loop to convert to base
         do {
         let digit = decimal % base;
+        window.alert(digit)
         conversion = "" + digit + conversion; // what does this do?
         decimal = ~~(decimal / base);         // what does this do?
         } while (decimal > 0);                  // why while at the end? what is ~~?
@@ -120,7 +126,7 @@ tags: [html, liquid, javascript]
         image.src = IMAGE_OFF;
         butt.innerHTML = MSG_ON;
         } else {
-        dig.value = 2**(BITS-i-1);
+        dig.value = 1;
         image.src = IMAGE_ON;
         butt.innerHTML = MSG_OFF;
         }
@@ -155,4 +161,7 @@ tags: [html, liquid, javascript]
         }
         }
     }
+
+    
 </script>
+
