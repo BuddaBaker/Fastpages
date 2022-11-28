@@ -89,6 +89,7 @@ window.onload = wrap_img;
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>Base 30</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -97,6 +98,7 @@ window.onload = wrap_img;
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="base">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -108,9 +110,57 @@ window.onload = wrap_img;
             <tr>
                 
                 
+                <td><img class="img-responsive py-3" id="bulb0" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt0" onclick="javascript:toggleBit(0)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb1" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt1" onclick="javascript:toggleBit(1)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb2" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb3" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb4" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb5" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb6" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb7" src="/Fastpages/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
+                </td>
+                
             </tr>
             <tr>
                 
+                
+                <td><input type="text" id="digit0" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit1" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit2" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit3" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit4" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit5" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit6" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit7" value="0" size="1" readonly="" /></td>
                 
             </tr>
             </table>
@@ -119,10 +169,11 @@ window.onload = wrap_img;
 </div>
 
 <script>
-    const BITS = ;
+
+    const BITS = 8;
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
-    const IMAGE_ON = "/Fastpages/images/bulb_on.gif";
+    const IMAGE_ON = "/Fastpages/images/light-green.gif";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "/Fastpages/images/bulb_off.png"
 
@@ -143,6 +194,8 @@ window.onload = wrap_img;
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+        //Base 30 conversion
+        document.getElementById('base').innerHTML = parseInt(binary, 2).toString(30);
     }
     //
     function decimal_2_base(decimal, base) {
@@ -150,6 +203,7 @@ window.onload = wrap_img;
         // loop to convert to base
         do {
         let digit = decimal % base;
+        window.alert(digit)
         conversion = "" + digit + conversion; // what does this do?
         decimal = ~~(decimal / base);         // what does this do?
         } while (decimal > 0);                  // why while at the end? what is ~~?
@@ -162,7 +216,7 @@ window.onload = wrap_img;
         return conversion;
     }
 
-    // toggle selected bit and recalculate
+    // MADE CHANGE HERE:toggle selected bit and recalculate
     function toggleBit(i) {
         //alert("Digit action: " + i );
         const dig = document.getElementById('digit' + i);
@@ -209,6 +263,8 @@ window.onload = wrap_img;
         }
         }
     }
+
+    
 </script>
 
 

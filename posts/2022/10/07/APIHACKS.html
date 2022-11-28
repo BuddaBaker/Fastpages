@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -162,7 +162,7 @@ window.onload = wrap_img;
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
 
-<span class="c1">#print(response.json())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 
 <span class="k">for</span> <span class="n">schedule</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">schedule</span><span class="p">[</span><span class="s1">'name'</span><span class="p">])</span>
@@ -179,37 +179,38 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Indianapolis Colts at Denver Broncos
+<pre>{'message': 'NFL Scheduled games', 'data': [{'date': '2022-11-24T17:30Z', 'venue': 'Ford Field', 'name': 'Buffalo Bills at Detroit Lions', 'shortName': 'BUF @ DET', 'awayTeam': {'name': 'Bills', 'score': '0'}, 'homeTeam': {'name': 'Lions', 'score': '0'}}, {'date': '2022-11-24T21:30Z', 'venue': 'AT&amp;T Stadium', 'name': 'New York Giants at Dallas Cowboys', 'shortName': 'NYG @ DAL', 'awayTeam': {'name': 'Giants', 'score': '0'}, 'homeTeam': {'name': 'Cowboys', 'score': '0'}}, {'date': '2022-11-25T01:20Z', 'venue': 'U.S. Bank Stadium', 'name': 'New England Patriots at Minnesota Vikings', 'shortName': 'NE @ MIN', 'awayTeam': {'name': 'Patriots', 'score': '0'}, 'homeTeam': {'name': 'Vikings', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'FirstEnergy Stadium', 'name': 'Tampa Bay Buccaneers at Cleveland Browns', 'shortName': 'TB @ CLE', 'awayTeam': {'name': 'Buccaneers', 'score': '0'}, 'homeTeam': {'name': 'Browns', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'Nissan Stadium', 'name': 'Cincinnati Bengals at Tennessee Titans', 'shortName': 'CIN @ TEN', 'awayTeam': {'name': 'Bengals', 'score': '0'}, 'homeTeam': {'name': 'Titans', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'Hard Rock Stadium', 'name': 'Houston Texans at Miami Dolphins', 'shortName': 'HOU @ MIA', 'awayTeam': {'name': 'Texans', 'score': '0'}, 'homeTeam': {'name': 'Dolphins', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'MetLife Stadium', 'name': 'Chicago Bears at New York Jets', 'shortName': 'CHI @ NYJ', 'awayTeam': {'name': 'Bears', 'score': '0'}, 'homeTeam': {'name': 'Jets', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'FedExField', 'name': 'Atlanta Falcons at Washington Commanders', 'shortName': 'ATL @ WSH', 'awayTeam': {'name': 'Falcons', 'score': '0'}, 'homeTeam': {'name': 'Commanders', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'Bank of America Stadium', 'name': 'Denver Broncos at Carolina Panthers', 'shortName': 'DEN @ CAR', 'awayTeam': {'name': 'Broncos', 'score': '0'}, 'homeTeam': {'name': 'Panthers', 'score': '0'}}, {'date': '2022-11-27T18:00Z', 'venue': 'TIAA Bank Field', 'name': 'Baltimore Ravens at Jacksonville Jaguars', 'shortName': 'BAL @ JAX', 'awayTeam': {'name': 'Ravens', 'score': '0'}, 'homeTeam': {'name': 'Jaguars', 'score': '0'}}, {'date': '2022-11-27T21:05Z', 'venue': 'State Farm Stadium', 'name': 'Los Angeles Chargers at Arizona Cardinals', 'shortName': 'LAC @ ARI', 'awayTeam': {'name': 'Chargers', 'score': '0'}, 'homeTeam': {'name': 'Cardinals', 'score': '0'}}, {'date': '2022-11-27T21:05Z', 'venue': 'Lumen Field', 'name': 'Las Vegas Raiders at Seattle Seahawks', 'shortName': 'LV @ SEA', 'awayTeam': {'name': 'Raiders', 'score': '0'}, 'homeTeam': {'name': 'Seahawks', 'score': '0'}}, {'date': '2022-11-27T21:25Z', 'venue': 'GEHA Field at Arrowhead Stadium', 'name': 'Los Angeles Rams at Kansas City Chiefs', 'shortName': 'LAR @ KC', 'awayTeam': {'name': 'Rams', 'score': '0'}, 'homeTeam': {'name': 'Chiefs', 'score': '0'}}, {'date': '2022-11-27T21:25Z', 'venue': "Levi's Stadium", 'name': 'New Orleans Saints at San Francisco 49ers', 'shortName': 'NO @ SF', 'awayTeam': {'name': 'Saints', 'score': '0'}, 'homeTeam': {'name': '49ers', 'score': '0'}}, {'date': '2022-11-28T01:20Z', 'venue': 'Lincoln Financial Field', 'name': 'Green Bay Packers at Philadelphia Eagles', 'shortName': 'GB @ PHI', 'awayTeam': {'name': 'Packers', 'score': '0'}, 'homeTeam': {'name': 'Eagles', 'score': '0'}}, {'date': '2022-11-29T01:15Z', 'venue': 'Lucas Oil Stadium', 'name': 'Pittsburgh Steelers at Indianapolis Colts', 'shortName': 'PIT @ IND', 'awayTeam': {'name': 'Steelers', 'score': '0'}, 'homeTeam': {'name': 'Colts', 'score': '0'}}]}
+Buffalo Bills at Detroit Lions
 
-New York Giants at Green Bay Packers
+New York Giants at Dallas Cowboys
 
-Pittsburgh Steelers at Buffalo Bills
+New England Patriots at Minnesota Vikings
 
-Los Angeles Chargers at Cleveland Browns
+Tampa Bay Buccaneers at Cleveland Browns
 
-Chicago Bears at Minnesota Vikings
+Cincinnati Bengals at Tennessee Titans
 
-Detroit Lions at New England Patriots
+Houston Texans at Miami Dolphins
 
-Seattle Seahawks at New Orleans Saints
+Chicago Bears at New York Jets
 
-Miami Dolphins at New York Jets
+Atlanta Falcons at Washington Commanders
 
-Atlanta Falcons at Tampa Bay Buccaneers
+Denver Broncos at Carolina Panthers
 
-Tennessee Titans at Washington Commanders
+Baltimore Ravens at Jacksonville Jaguars
 
-Houston Texans at Jacksonville Jaguars
+Los Angeles Chargers at Arizona Cardinals
 
-San Francisco 49ers at Carolina Panthers
+Las Vegas Raiders at Seattle Seahawks
 
-Dallas Cowboys at Los Angeles Rams
+Los Angeles Rams at Kansas City Chiefs
 
-Philadelphia Eagles at Arizona Cardinals
+New Orleans Saints at San Francisco 49ers
 
-Cincinnati Bengals at Baltimore Ravens
+Green Bay Packers at Philadelphia Eagles
 
-Las Vegas Raiders at Kansas City Chiefs
+Pittsburgh Steelers at Indianapolis Colts
 
 </pre>
 </div>
