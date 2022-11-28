@@ -4,10 +4,8 @@ layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary
 image: /images/binary.png
-categories: [3.B, 3.C, C4.4]
+categories: []
 tags: [html, liquid, javascript]
-week: 13
-type: pbl
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
@@ -15,6 +13,8 @@ type: pbl
 <!-- Hack 3: do your own thing -->
 
 
+
+{% assign BITS = 8 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -108,7 +108,7 @@ type: pbl
         return conversion;
     }
 
-    // toggle selected bit and recalculate
+    // MADE CHANGE HERE:toggle selected bit and recalculate
     function toggleBit(i) {
         //alert("Digit action: " + i );
         const dig = document.getElementById('digit' + i);
@@ -120,7 +120,7 @@ type: pbl
         image.src = IMAGE_OFF;
         butt.innerHTML = MSG_ON;
         } else {
-        dig.value = 1;
+        dig.value = 2**(BITS-i-1);
         image.src = IMAGE_ON;
         butt.innerHTML = MSG_OFF;
         }
