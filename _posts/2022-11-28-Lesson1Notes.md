@@ -26,7 +26,8 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#song = input(&quot;Which song number do you want?&quot;)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">album</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which album do want?&quot;</span><span class="p">)</span>
+<span class="n">song</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which song number do you want?&quot;</span><span class="p">))</span>
 
 <span class="n">albums</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s2">&quot;Welcome to my Nightmare&quot;</span><span class="p">,</span> <span class="s2">&quot;Alice Cooper&quot;</span><span class="p">,</span> <span class="mi">1975</span><span class="p">,</span>   <span class="c1"># First album list</span>
@@ -67,7 +68,17 @@ layout: notebook
      <span class="p">]</span>
      <span class="p">),</span>
 <span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">album</span> <span class="o">==</span> <span class="s1">&#39;More Mayhem&#39;</span> <span class="p">:</span>
+    <span class="n">album</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">elif</span> <span class="n">album</span> <span class="o">==</span> <span class="s1">&#39;Nightflight&#39;</span><span class="p">:</span>
+    <span class="n">album</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">elif</span> <span class="n">album</span> <span class="o">==</span> <span class="s1">&#39;Bad Company&#39;</span><span class="p">:</span>
+    <span class="n">album</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">album</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">song</span> <span class="o">=</span> <span class="n">song</span> <span class="o">-</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="n">album</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="n">song</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -79,22 +90,9 @@ layout: notebook
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 43&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> #album = input(&#34;Which album do want?&#34;)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span> #song = input(&#34;Which song number do you want?&#34;)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> albums = [
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     (&#34;Welcome to my Nightmare&#34;, &#34;Alice Cooper&#34;, 1975,   # First album list
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>      [
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=40&#39;&gt;41&lt;/a&gt;</span>      ),
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=41&#39;&gt;42&lt;/a&gt;</span> ]
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-28-Lesson1Notes.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=42&#39;&gt;43&lt;/a&gt;</span> print(albums[1,1])
-
-<span class="ansi-red-fg">TypeError</span>: list indices must be integers or slices, not tuple</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(2, &#39;Psycho&#39;)
+</pre>
 </div>
 </div>
 
