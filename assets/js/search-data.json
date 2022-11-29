@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Notes From Alumni",
+            "content": "Notes: . Reflected on what he wanted to do . | Logical thinking background helped with Coding and solving problems . | Keeping motivated is a struggle with the errors that may be thrown at you . | There’s always someone who is better at coding but don’t worry about them and try to be the best you can be . | You will need to incorporate many different skills into CS projects . | Studying in groups will help everyone understand better because of the shared learning . | Many different applications for CS that you can apply for different needs . | Internships are a great way to get more experience . | .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/11/28/Notes-from-Alumni.html",
+            "relUrl": "/2022/11/28/Notes-from-Alumni.html",
+            "date": " • Nov 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Lesson Blog 1",
             "content": "album = input(&quot;Which album do want?&quot;) song = int(input(&quot;Which song number do you want?&quot;)) albums = [ (&quot;Welcome to my Nightmare&quot;, &quot;Alice Cooper&quot;, 1975, # First album list [ (1, &quot;Welcome to my Nightmare&quot;), (2, &quot;Devil&#39;s Food&quot;), (3, &quot;The Black Widow&quot;), (4, &quot;Some Folks&quot;), (5, &quot;Only Women Bleed&quot;), ] ), (&quot;Bad Company&quot;, &quot;Bad Company&quot;, 1974, # Second album list [ (1, &quot;Can&#39;t Get Enough&quot;), (2, &quot;Rock Steady&quot;), (3, &quot;Ready for Love&quot;), (4, &quot;Don&#39;t Let Me Down&quot;), (5, &quot;Bad Company&quot;), (6, &quot;The Way I Choose&quot;), (7, &quot;Movin&#39; On&quot;), (8, &quot;Seagull&quot;), ] ), (&quot;Nightflight&quot;, &quot;Budgie&quot;, 1981, [ (1, &quot;I Turned to Stone&quot;), (2, &quot;Keeping a Rendezvous&quot;), (3, &quot;Reaper of the Glory&quot;), (4, &quot;She Used Me Up&quot;), ] ), (&quot;More Mayhem&quot;, &quot;Imelda May&quot;, 2011, [ (1, &quot;Pulling the Rug&quot;), (2, &quot;Psycho&quot;), (3, &quot;Mayhem&quot;), (4, &quot;Kentish Town Waltz&quot;), ] ), ] if album == &#39;More Mayhem&#39; : album = 3 elif album == &#39;Nightflight&#39;: album = 2 elif album == &#39;Bad Company&#39;: album = 2 else: album = 1 song = song -1 print(albums[album][3][song]) . (2, &#39;Psycho&#39;) .",
             "url": "https://buddabaker.github.io/Fastpages/posts/2022/11/28/Lesson1Notes.html",
@@ -12,23 +23,12 @@
     
   
     
-        ,"post1": {
-            "title": "Notes From Alumni",
-            "content": "Notes: . Reflected on what he wanted to do . | Logical thinking background helped with Coding and solving problems . | Keeping motivated is a struggle with the errors that may be thrown at you . | There’s always someone who is better at coding but don’t worry about them and try to be the best you can be . | You will need to incorporate many different skills into CS projects . | Studying in groups will help everyone understand better because of the shared learning . | Many different applications for CS that you can apply for different needs . | Internships are a great way to get more experience . | .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/11/27/Notes-from-Alumni.html",
-            "relUrl": "/2022/11/27/Notes-from-Alumni.html",
-            "date": " • Nov 27, 2022"
-        }
-        
-    
-  
-    
         ,"post2": {
             "title": "Business Overview",
             "content": "Elevator Pitch: Many people have issues with time management about 82% of americans. To fix this I created OTASCA which is an app that creates a schedule for the people and allows them to manage their time better. This app not only plans your important meetings but also schedules work time and other important activities you have going on. . Business Model: My business will be a monthly subscription service charging $5 a month for the basic features and an additional price for the premium features. . Next Steps: The next steps are to create a survey to see if there is interest in the idea and how much the consumers would be willing to pay for this. .",
-            "url": "https://buddabaker.github.io/Fastpages/2022/11/27/Business-Overview.html",
-            "relUrl": "/2022/11/27/Business-Overview.html",
-            "date": " • Nov 27, 2022"
+            "url": "https://buddabaker.github.io/Fastpages/2022/11/28/Business-Overview.html",
+            "relUrl": "/2022/11/28/Business-Overview.html",
+            "date": " • Nov 28, 2022"
         }
         
     
@@ -223,9 +223,9 @@
     
         ,"post20": {
             "title": "Binary Math",
-            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Base 30 Minus . +1 | 00000000 | 0 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | .",
-            "url": "https://buddabaker.github.io/Fastpages/frontend/binary",
-            "relUrl": "/frontend/binary",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 000000000000000000000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | | | | | | | | | | | | | | | | | . Footer .",
+            "url": "https://buddabaker.github.io/Fastpages/2022/07/07/PBL-binary.html",
+            "relUrl": "/2022/07/07/PBL-binary.html",
             "date": " • Jul 7, 2022"
         }
         
