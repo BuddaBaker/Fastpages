@@ -78,7 +78,7 @@ layout: notebook
 <span class="k">else</span><span class="p">:</span>
     <span class="n">album</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">song</span> <span class="o">=</span> <span class="n">song</span> <span class="o">-</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="n">album</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="n">song</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">album</span><span class="p">)][</span><span class="mi">3</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="n">song</span><span class="p">)])</span>
 </pre></div>
 
     </div>
@@ -91,7 +91,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(2, &#39;Psycho&#39;)
+<pre>(1, &#39;I Turned to Stone&#39;)
 </pre>
 </div>
 </div>
