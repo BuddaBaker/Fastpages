@@ -123,7 +123,7 @@ layout: notebook
 <span class="k">else</span><span class="p">:</span>
     <span class="n">album</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">song</span> <span class="o">=</span> <span class="n">song</span> <span class="o">-</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">albums</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">album</span><span class="p">)][</span><span class="mi">3</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="n">song</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Playing&quot;</span><span class="p">,</span> <span class="n">albums</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">album</span><span class="p">)][</span><span class="mi">3</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="n">song</span><span class="p">)])</span>
 </pre></div>
 
     </div>
@@ -136,7 +136,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(3, &#39;Ready for Love&#39;)
+<pre>Playing (1, &#34;Can&#39;t Get Enough&#34;)
 </pre>
 </div>
 </div>
