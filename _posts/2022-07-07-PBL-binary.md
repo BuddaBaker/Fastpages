@@ -28,6 +28,7 @@ permalink: /binary
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>Base 30</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -36,6 +37,7 @@ permalink: /binary
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="base">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -92,6 +94,7 @@ function setConversions(binary) {
     document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
     // Decimal conversion
     document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+    document.getElementById('base').innerHTML = parseInt(binary, 2).toString(30)
 }
 //
 function decimal_2_base(decimal, base) {

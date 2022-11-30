@@ -26,7 +26,52 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">album</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which album do want?&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">104</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">308</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span>
+        <span class="mi">100</span><span class="p">,</span> <span class="mi">306</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">108</span><span class="p">]</span>    <span class="c1"># list of the different numerical values</span>
+<span class="n">min_valid</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># minimum value</span>
+<span class="n">max_valid</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c1"># maximum value</span>
+
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">i</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4 2
+308 4
+5 6
+306 9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">album</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which album do want?&quot;</span><span class="p">))</span>
 <span class="n">song</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Which song number do you want?&quot;</span><span class="p">))</span>
 
 <span class="n">albums</span> <span class="o">=</span> <span class="p">[</span>
@@ -91,7 +136,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, &#39;I Turned to Stone&#39;)
+<pre>(3, &#39;Ready for Love&#39;)
 </pre>
 </div>
 </div>
