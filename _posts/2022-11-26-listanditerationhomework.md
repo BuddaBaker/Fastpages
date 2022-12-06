@@ -63,7 +63,7 @@ layout: notebook
 <td style="text-align:center">Replaces the element at index i with value</td>
 </tr>
 <tr>
-<td style="text-align:center">REMOVE(aList)</td>
+<td style="text-align:center">REMOVE(aList,i)</td>
 <td>aList.pop(i)<br>OR<br>aList.remove(value)</td>
 <td style="text-align:center"><em>Removes item at index i and any values at <br>indices greater than i shift to the left. <br>Length of aList decreased by 1. </em></td>
 </tr>
@@ -98,10 +98,10 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">quiz</span><span class="p">():</span>
     <span class="n">points</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Who won the 2021-2022 NBA Championship?&quot;</span><span class="p">,</span> <span class="s2">&quot;Which NBA franchise has the most MVP winners?&quot;</span><span class="p">,</span> <span class="s2">&quot;Who won the 2021-2022 NBA MVP?&quot;</span><span class="p">,</span> <span class="s2">&quot;Which NBA team(s) has the most rings?&quot;</span><span class="p">]</span>
-    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Warriors&quot;</span><span class="p">,</span> <span class="s2">&quot;Celtics&quot;</span><span class="p">,</span> <span class="s2">&quot;Nikola Jokic&quot;</span><span class="p">,</span> <span class="s2">&quot;Celtics&quot;</span><span class="p">]</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;How do you remove&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you add&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you insert&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you call an index&quot;</span><span class="p">,</span><span class="s2">&quot;How do you have a variable equal to a part of the list?&quot;</span><span class="p">]</span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;list.remove&quot;</span><span class="p">,</span> <span class="s2">&quot;list.append&quot;</span><span class="p">,</span> <span class="s2">&quot;list.insert&quot;</span><span class="p">,</span> <span class="s2">&quot;list[i]&quot;</span><span class="p">,</span> <span class="s2">&quot;x = list[i]&quot;</span><span class="p">]</span>
     <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
         <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
         <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">answers</span><span class="p">[</span><span class="n">num</span><span class="p">]:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct&quot;</span><span class="p">)</span>
@@ -109,7 +109,7 @@ layout: notebook
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Incorrect&quot;</span><span class="p">)</span>
         <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got:&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">points</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got:&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">points</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
 <span class="n">quiz</span><span class="p">()</span>
     <span class="c1">#make a function to check if the answer was correct or not</span>
 </pre></div>
@@ -124,11 +124,12 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Incorrect
+<pre>Correct
+Correct
 Correct
 Correct
 Incorrect
-You got: 50.0 %
+You got: 80.0 %
 </pre>
 </div>
 </div>
@@ -232,8 +233,11 @@ artichokes
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">binarylist</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;01001001&quot;</span><span class="p">,</span> <span class="s2">&quot;10101010&quot;</span><span class="p">,</span> <span class="s2">&quot;10010110&quot;</span><span class="p">,</span> <span class="s2">&quot;00110111&quot;</span><span class="p">,</span> <span class="s2">&quot;11101100&quot;</span><span class="p">,</span> <span class="s2">&quot;11010001&quot;</span><span class="p">,</span> <span class="s2">&quot;10000001&quot;</span>
 <span class="p">]</span>
-
+<span class="n">x</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">binary_convert</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="n">x</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+        
     <span class="k">pass</span>
     <span class="c1">#use this function to convert every binary value in binarylist to decimal</span>
     <span class="c1">#afterward, get rid of the values that are greater than 100 in decimal</span>
