@@ -177,30 +177,15 @@ window.onload = wrap_img;
 <span class="c1"># function to reverse the string</span>
 <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">strs</span><span class="p">):</span>
     <span class="n">strv</span> <span class="o">=</span> <span class="p">(</span><span class="n">strs</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">strv</span>
  
 <span class="c1"># Driver Code</span>
-<span class="n">reverse</span><span class="p">(</span><span class="n">DecimalToBinary</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Binary number for"</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">"is: "</span><span class="p">,)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Binary number for"</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">"is: "</span><span class="p">,</span><span class="n">reverse</span><span class="p">(</span><span class="n">DecimalToBinary</span><span class="p">(</span><span class="n">num</span><span class="p">)))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>10111
-10111
-The Binary number for  23 None
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
