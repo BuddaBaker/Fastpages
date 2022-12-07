@@ -226,7 +226,7 @@ artichokes
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Struggle:
-I struggled with challenge 3.8. I was very confused on how to convert the binary to decimal because I didn't know how to move through the array and multiply the numbers by the power they needed to be multiplied by.</p>
+I struggled with challenge 3.8. I was very confused on how to convert the binary to decimal because I didn't know how to move through the array and multiply the numbers by the power they needed to be multiplied by. I was able to convert one of the binary numbers too decimal however I was unable to do the rest. The end of the code shows how I checked if the output was greater than 100 and how it would be removed if it was.</p>
 
 </div>
 </div>
@@ -241,28 +241,24 @@ I struggled with challenge 3.8. I was very confused on how to convert the binary
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">binarylist</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;01001001&quot;</span><span class="p">,</span> <span class="s2">&quot;10101010&quot;</span><span class="p">,</span> <span class="s2">&quot;10010110&quot;</span><span class="p">,</span> <span class="s2">&quot;00110111&quot;</span><span class="p">,</span> <span class="s2">&quot;11101100&quot;</span><span class="p">,</span> <span class="s2">&quot;11010001&quot;</span><span class="p">,</span> <span class="s2">&quot;10000001&quot;</span>
 <span class="p">]</span>
-<span class="n">bnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Money&quot;</span><span class="p">))</span>
-<span class="n">dnum</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="k">while</span> <span class="n">bnum</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
-    <span class="n">rem</span> <span class="o">=</span> <span class="n">bnum</span><span class="o">%</span><span class="k">10</span>
-    <span class="n">dnum</span> <span class="o">=</span> <span class="n">dnum</span> <span class="o">+</span> <span class="p">(</span><span class="n">rem</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span><span class="mi">2</span>
-    <span class="n">bnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bnum</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">binary_convert</span><span class="p">():</span>
-    
+<span class="n">decimallist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">binary</span> <span class="ow">in</span> <span class="n">binarylist</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>
 
-    <span class="k">for</span> <span class="n">bnum</span> <span class="ow">in</span> <span class="n">binarylist</span><span class="p">:</span>
-        <span class="k">while</span> <span class="n">bnum</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
-            <span class="n">rem</span> <span class="o">=</span> <span class="n">bnum</span><span class="o">%</span><span class="k">10</span>
-            <span class="n">dnum</span> <span class="o">=</span> <span class="n">dnum</span> <span class="o">+</span> <span class="p">(</span><span class="n">rem</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
-            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="mi">2</span>
-            <span class="n">bnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bnum</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">binary_convert</span><span class="p">(</span><span class="n">binarylist</span><span class="p">):</span>
+        <span class="n">decimal</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="n">binary</span><span class="p">:</span>
+            <span class="n">decimal</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The decimal value is:&quot;</span><span class="p">,</span> <span class="n">decimal</span><span class="p">)</span>
+        <span class="n">decimallist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Equivalent Decimal Value = &quot;</span><span class="p">,</span> <span class="n">dnum</span><span class="p">)</span>
-    
+<span class="n">binary_convert</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)</span>
 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">decimallist</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">decimallist</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">decimallist</span><span class="p">)</span>
     <span class="c1">#use this function to convert every binary value in binarylist to decimal</span>
     <span class="c1">#afterward, get rid of the values that are greater than 100 in decimal</span>
 
@@ -279,8 +275,15 @@ I struggled with challenge 3.8. I was very confused on how to convert the binary
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-Equivalent Decimal Value =  0
+<pre>01001001
+10101010
+10010110
+00110111
+11101100
+11010001
+10000001
+The decimal value is: 129
+[]
 </pre>
 </div>
 </div>
