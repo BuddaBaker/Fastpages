@@ -348,7 +348,7 @@
   
       ,"page1": {
           "title": "Vocab Page",
-          "content": "Vocab Table edit . Week Term Defintion . 1 | print | print is a way to display messages through python | . 1 | if else statement | Check if one condition is true, if its not true then do the other code | . 1 | variables | Check if one condition is true, if its not true then do the other code | . 2 | lists | A sequence of elements that can be edited and called | . 2 | Dictionary | A data structure with a key and value which can be edited and called | . .",
+          "content": "Vocab Table edit . Week Term Defintion . 1 | print | print is a way to display messages through python | . 1 | if else statement | Check if one condition is true, if its not true then do the other code | . 1 | variables | Check if one condition is true, if its not true then do the other code | . 2 | lists | A sequence of elements that can be edited and called | . 2 | Dictionary | A data structure with a key and value which can be edited and called | New | Algorithm | Series of tasks which run a certain program | New | Binary Search | Search procedure which searches the median to find a desired number | New | Recursive | Running a search multiple times to search for a specific result | . .",
           "url": "https://buddabaker.github.io/Fastpages/vocab/",
           "relUrl": "/vocab/",
           "date": ""
