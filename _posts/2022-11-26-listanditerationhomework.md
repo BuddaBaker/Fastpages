@@ -23,6 +23,13 @@ layout: notebook
 <li>Make sure you complete the challenge in the challenges section while we present the lesson! </li>
 </ul>
 <p>Add your <mark>OWN</mark> Notes for 3.10 here:</p>
+<ul>
+<li>Lists can be used to store data</li>
+<li>Indexes count an organize data in a list</li>
+<li>Iteration is repeating a function multiple times </li>
+<li>A condition is telling when a system should stop running</li>
+<li>You can use a for loop for element in list</li>
+</ul>
 <p>Fill out the empty boxes:</p>
 <table>
 <thead><tr>
