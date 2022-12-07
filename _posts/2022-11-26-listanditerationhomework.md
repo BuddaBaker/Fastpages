@@ -27,8 +27,6 @@ layout: notebook
 <li>Lists can be used to store data</li>
 <li>Indexes count an organize data in a list</li>
 <li>Iteration is repeating a function multiple times </li>
-<li>A condition is telling when a system should stop running</li>
-<li>You can use a for loop for element in list</li>
 </ul>
 <p>Fill out the empty boxes:</p>
 <table>
@@ -83,6 +81,11 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Overview-and-Notes:--3.8---Iteration">Overview and Notes:  3.8 - Iteration<a class="anchor-link" href="#Overview-and-Notes:--3.8---Iteration"> </a></h2><p>Add your <mark>OWN</mark> Notes for 3.8 here:</p>
+<ul>
+<li>A condition is telling when a system should stop running</li>
+<li>You can use a for loop for element in list</li>
+<li>You can use the list functions to manupulate the list items</li>
+</ul>
 
 </div>
 </div>
