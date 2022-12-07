@@ -98,7 +98,7 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">quiz</span><span class="p">():</span>
     <span class="n">points</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;How do you remove an element from a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you add to a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you insert an element into a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you call an index&quot;</span><span class="p">,</span><span class="s2">&quot;How do you have a variable equal to a part of the list?&quot;</span><span class="p">]</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;How do you remove an element from a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you add to a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you insert an element into a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you call an index to a list&quot;</span><span class="p">,</span><span class="s2">&quot;How do you have a variable equal to a part of the list?&quot;</span><span class="p">]</span>
     <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;list.remove&quot;</span><span class="p">,</span> <span class="s2">&quot;list.append&quot;</span><span class="p">,</span> <span class="s2">&quot;list.insert&quot;</span><span class="p">,</span> <span class="s2">&quot;list[i]&quot;</span><span class="p">,</span> <span class="s2">&quot;x = list[i]&quot;</span><span class="p">]</span>
     <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
@@ -223,6 +223,14 @@ artichokes
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Struggle:
+I struggled with challenge 3.8. I was very confused on how to convert the binary to decimal because I didn't know how to move through the array and multiply the numbers by the power they needed to be multiplied by.</p>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -233,12 +241,28 @@ artichokes
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">binarylist</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;01001001&quot;</span><span class="p">,</span> <span class="s2">&quot;10101010&quot;</span><span class="p">,</span> <span class="s2">&quot;10010110&quot;</span><span class="p">,</span> <span class="s2">&quot;00110111&quot;</span><span class="p">,</span> <span class="s2">&quot;11101100&quot;</span><span class="p">,</span> <span class="s2">&quot;11010001&quot;</span><span class="p">,</span> <span class="s2">&quot;10000001&quot;</span>
 <span class="p">]</span>
-<span class="n">x</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">binary_convert</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="n">x</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-        
-    <span class="k">pass</span>
+<span class="n">bnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Money&quot;</span><span class="p">))</span>
+<span class="n">dnum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">bnum</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+    <span class="n">rem</span> <span class="o">=</span> <span class="n">bnum</span><span class="o">%</span><span class="k">10</span>
+    <span class="n">dnum</span> <span class="o">=</span> <span class="n">dnum</span> <span class="o">+</span> <span class="p">(</span><span class="n">rem</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span><span class="mi">2</span>
+    <span class="n">bnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bnum</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">binary_convert</span><span class="p">():</span>
+    
+
+    <span class="k">for</span> <span class="n">bnum</span> <span class="ow">in</span> <span class="n">binarylist</span><span class="p">:</span>
+        <span class="k">while</span> <span class="n">bnum</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">rem</span> <span class="o">=</span> <span class="n">bnum</span><span class="o">%</span><span class="k">10</span>
+            <span class="n">dnum</span> <span class="o">=</span> <span class="n">dnum</span> <span class="o">+</span> <span class="p">(</span><span class="n">rem</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="mi">2</span>
+            <span class="n">bnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bnum</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Equivalent Decimal Value = &quot;</span><span class="p">,</span> <span class="n">dnum</span><span class="p">)</span>
+    
+
     <span class="c1">#use this function to convert every binary value in binarylist to decimal</span>
     <span class="c1">#afterward, get rid of the values that are greater than 100 in decimal</span>
 
@@ -246,6 +270,21 @@ artichokes
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Equivalent Decimal Value =  0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
