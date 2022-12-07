@@ -98,7 +98,7 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">quiz</span><span class="p">():</span>
     <span class="n">points</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;How do you remove&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you add&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you insert&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you call an index&quot;</span><span class="p">,</span><span class="s2">&quot;How do you have a variable equal to a part of the list?&quot;</span><span class="p">]</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;How do you remove an element from a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you add to a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you insert an element into a list&quot;</span><span class="p">,</span> <span class="s2">&quot;How do you call an index&quot;</span><span class="p">,</span><span class="s2">&quot;How do you have a variable equal to a part of the list?&quot;</span><span class="p">]</span>
     <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;list.remove&quot;</span><span class="p">,</span> <span class="s2">&quot;list.append&quot;</span><span class="p">,</span> <span class="s2">&quot;list.insert&quot;</span><span class="p">,</span> <span class="s2">&quot;list[i]&quot;</span><span class="p">,</span> <span class="s2">&quot;x = list[i]&quot;</span><span class="p">]</span>
     <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
@@ -127,8 +127,8 @@ layout: notebook
 <pre>Correct
 Correct
 Correct
-Correct
 Incorrect
+Correct
 You got: 80.0 %
 </pre>
 </div>
