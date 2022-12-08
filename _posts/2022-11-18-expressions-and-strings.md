@@ -150,7 +150,7 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a decimal number </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a decimal number&quot;</span><span class="p">))</span>
 <span class="n">binary</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">new</span> <span class="o">=</span> <span class="n">decimal</span> 
