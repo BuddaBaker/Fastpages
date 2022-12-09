@@ -44,13 +44,13 @@ table, th, td {
     <td>2</td>
     <td>Dictionary</td>
     <td>A data structure with a key and value which can be edited and called</td>
-    <td>New</td>
+    <td>3</td>
     <td>Algorithm</td>
     <td>Series of tasks which run a certain program</td>
-    <td>New</td>
+    <td>4</td>
     <td>Binary Search</td>
     <td>Search procedure which searches the median to find a desired number</td>
-    <td>New</td>
+    <td>5</td>
     <td>Recursive</td>
     <td>Running a search multiple times to search for a specific result</td>
   </tr>
