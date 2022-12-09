@@ -114,12 +114,13 @@ You can also alter the result without channging the code</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">30</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;higher&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lower&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">const</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">const</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Higher&quot;</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Lower&quot;</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
@@ -175,6 +176,33 @@ You can also alter the result without channging the code</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb Cell 10</span> in <span class="ansi-cyan-fg">&lt;cell line: 10&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>         m.append(int(bin(i[2:])))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>     return m
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> print(charToBinary(&#34;APCSP&#34;))
+
+<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb Cell 10</span> in <span class="ansi-cyan-fg">charToBinary</span><span class="ansi-blue-fg">(x)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     l.append(ord(i))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> for i in l:
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     m.append(int(bin(i[2:])))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-12-1-notetemplate.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> return m
+
+<span class="ansi-red-fg">TypeError</span>: &#39;int&#39; object is not subscriptable</pre>
+</div>
+</div>
+
 </div>
 </div>
 
