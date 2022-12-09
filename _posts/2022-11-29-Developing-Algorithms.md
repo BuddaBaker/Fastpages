@@ -144,13 +144,27 @@ Its too hot outside</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="mi">95</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;i will go outside&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too cold outside&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>it is too hot outside
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -283,6 +297,57 @@ The resulting sum is 15.</li>
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">34</span>
+<span class="k">while</span> <span class="n">num</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">num</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>17
+52
+26
+13
+40
+20
+10
+5
+16
+8
+4
+2
+1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
