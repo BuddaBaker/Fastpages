@@ -573,7 +573,7 @@ Execution time: 0.06628036499023438 ms
 
     <span class="k">while</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     	<span class="n">y</span> <span class="o">=</span> <span class="n">z</span>
-     <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
         
     <span class="k">return</span> <span class="n">z</span>
    
@@ -632,19 +632,353 @@ Execution time: 0.06628036499023438 ms
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Check number 1 failed
-Check number 2 failed
-Check number 3 failed
-Check number 4 failed
-Check number 5 failed
-Check number 6 failed
-Check number 7 failed
-Check number 8 failed
-Check number 9 failed
-Check number 10 failed
-Check number 11 failed
-Check number 12 failed
-Check number 13 failed
+<pre>0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb Cell 31</span> in <span class="ansi-cyan-fg">&lt;cell line: 12&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>         else:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span>             print(&#34;Check number {} failed&#34;.format(i+1))
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> checkValid()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb Cell 31</span> in <span class="ansi-cyan-fg">checkValid</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> def checkValid():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     for i in range(len(test_cases)):
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         if sqrt(test_cases[i]) == answers[i]:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>             print(&#34;Check number {} passed&#34;.format(i+1))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>         else:
+
+<span class="ansi-green-intense-fg ansi-bold">/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb Cell 31</span> in <span class="ansi-cyan-fg">sqrt</span><span class="ansi-blue-fg">(x)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     print(x)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> y = x
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> z = (y + (x/y)) / 2
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> while (y - z) &gt; 0:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu-22.04/home/prasithchilla/Fastpages/_notebooks/2022-11-29-searching-introduction.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span> 	y = z
+
+<span class="ansi-red-fg">ZeroDivisionError</span>: division by zero</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Algorithms can be written in different ways and still accomplish the same tasks.
+Algorithms that look similar often yield differnet outputs.
+To solve the same problem, many different algorithms can be used.</p>
+<p>Therefore, algorithms are very important for programmers, and today we're going to explore how to determine the outcome of algorithms, how to deteremine the output of similar algorithms, how to edit existing algorithms, and how to develop our own algorithms.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Determine-the-outcome-of-algorithms">Determine the outcome of algorithms<a class="anchor-link" href="#Determine-the-outcome-of-algorithms"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">mystery</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">num2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;True&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;False&quot;</span><span class="p">)</span>
+
+<span class="n">mystery</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What does the algorithm do? Please explain in words.
+It is a set of commands that runs a task</li>
+<li>What if I put in 30 as num and 4 as num2. What would be the output?
+False</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Determine-the-outcome-of-similar-algorithms">Determine the outcome of similar algorithms<a class="anchor-link" href="#Determine-the-outcome-of-similar-algorithms"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="mi">95</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I will go outside&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too cold outside&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>it is too hot outside
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What is the output of this algorithm? it looks similar but the output is different!
+Its too hot outside</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="mi">95</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it is too hot outside&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Editing-Algorithms">Editing Algorithms<a class="anchor-link" href="#Editing-Algorithms"> </a></h3><p>Task: Please edit the algorithm above to have it yield the same results as the previous algorithm! (no matter what temp you put in)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Developing-Algorithms">Developing Algorithms<a class="anchor-link" href="#Developing-Algorithms"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To develop algorithms, we first need to understand what the question is asking. Then, think about how you would approach it as a human and then try to find what pattern you went through to arrive at the answer. Apply this to code, and there you have it! An algorithm!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's say you wanted to sum up the first five integers. How would you do this in real life?
+Your thought process would probably be:</p>
+<ul>
+<li>The sum of the first integer is 1. </li>
+<li>Then, increase that integer by 1. I now add 2 to my existing sum (1). My new sum is 3.</li>
+<li>Repeat until I add 5 to my sum.
+The resulting sum is 15.</li>
+</ul>
+<p>Now let's translate this into code.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># start with a sum of 0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span> <span class="c1"># you will repeat the process five times for integers 1-5</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">i</span> <span class="c1"># add the number to your sum</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span> <span class="c1"># print the result</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Task: Write an algorithm in python that sums up the first 5 odd integers. You can use the following code as a starter.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">counter</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>25
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Homework">Homework<a class="anchor-link" href="#Homework"> </a></h3><p>Create an algorithm that will start with any positive integer n and display the full sequence of numbers that result from the Collatz Conjecture. The COllatz Conjecture is as follows:</p>
+<ol>
+<li>start with any positive integer</li>
+<li>if the number is even, divide by 2</li>
+<li>if the number is odd, multiply by 3 and add 1</li>
+<li>repeat steps 2 and 3 until you reach 1</li>
+</ol>
+<p>Example: if the starting number was 6, the output would be 6, 3, 10, 5, 16, 8, 4, 2, 1</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">34</span>
+<span class="k">while</span> <span class="n">num</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">num</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>17
+52
+26
+13
+40
+20
+10
+5
+16
+8
+4
+2
+1
 </pre>
 </div>
 </div>
