@@ -563,22 +563,32 @@ Execution time: 0.06628036499023438 ms
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
-    <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
-
-    <span class="k">while</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">z</span>
-        <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
-        
-    <span class="k">return</span> <span class="n">z</span>
-   
+ 
+    <span class="c1"># find the first positive number `i` such that `i×i` is greater than `x`</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -593,7 +603,7 @@ Execution time: 0.06628036499023438 ms
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span> <span class="k">as</span> <span class="n">sq</span>
-<span class="n">test_cases</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">85248289</span><span class="p">,</span><span class="mi">22297284</span><span class="p">,</span><span class="mi">18939904</span><span class="p">,</span><span class="mi">91107025</span><span class="p">,</span><span class="mi">69122596</span><span class="p">,</span><span class="mi">9721924</span><span class="p">,</span><span class="mi">37810201</span><span class="p">,</span><span class="mi">1893294144</span><span class="p">,</span><span class="mi">8722812816</span><span class="p">,</span><span class="mi">644398225</span><span class="p">]</span>
+<span class="n">test_cases</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">85248289</span><span class="p">,</span><span class="mi">22297284</span><span class="p">,</span><span class="mi">18939904</span><span class="p">,</span><span class="mi">91107025</span><span class="p">,</span><span class="mi">69122596</span><span class="p">,</span><span class="mi">9721924</span><span class="p">,</span><span class="mi">37810201</span><span class="p">,</span><span class="mi">1893294144</span><span class="p">,</span><span class="mi">8722812816</span><span class="p">,</span><span class="mi">644398225</span><span class="p">]</span>
 <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">sq</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">test_cases</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">checkValid</span><span class="p">():</span>
@@ -616,8 +626,7 @@ Execution time: 0.06628036499023438 ms
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-Check number 1 passed
+<pre>Check number 1 passed
 Check number 2 passed
 Check number 3 passed
 Check number 4 passed
