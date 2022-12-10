@@ -638,6 +638,7 @@ Check number 9 passed
 Check number 10 passed
 Check number 11 passed
 Check number 12 passed
+Check number 13 passed
 </pre>
 </div>
 </div>
@@ -1018,8 +1019,8 @@ for (let i = <em>number</em>; i < <em>number</em>; i++) {
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">sunny</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">umbrella</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">sunny</span> <span class="o">==</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">umbrella</span> <span class="o">==</span> <span class="n">false</span><span class="p">;</span> 
 <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">rainy</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">umbrella</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span> 
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -1040,10 +1041,10 @@ for (let i = <em>number</em>; i < <em>number</em>; i++) {
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [1]</span>
-<span class="ansi-red-fg">    umbrella = false;</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax. Maybe you meant &#39;==&#39; or &#39;:=&#39; instead of &#39;=&#39;?
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [19]</span>
+<span class="ansi-red-fg">    if (sunny == &#34;true&#34;) {</span>
+                         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
 </pre>
 </div>
 </div>
@@ -1121,6 +1122,23 @@ The following are the steps to determine the network that an IP address is in gi
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
