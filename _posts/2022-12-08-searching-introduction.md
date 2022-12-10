@@ -20,6 +20,19 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Additional Notes:</p>
+<ul>
+<li>Algorithm is a set of commands that complete a task</li>
+<li>Human steps in code</li>
+<li>Algorithms can be used for iteration or selection</li>
+<li>There are benefits and draw backs to all algorithms</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="What-is-searching?">What is searching?<a class="anchor-link" href="#What-is-searching?"> </a></h2><p>In certain computer programs and applications, one might find the need to locate and retrieve a data value and/or it's index. Searching algorithms could be done in either intervals or sequences, and certain algorithms could be more efficient than others, with benefits and drawbacks to each.</p>
 
 </div>
