@@ -1,1 +1,1 @@
-Sitemap: https://buddabaker.github.io/Fastpages/sitemap.xml
+Sitemap: https://teamname.github.io/group/sitemap.xml
