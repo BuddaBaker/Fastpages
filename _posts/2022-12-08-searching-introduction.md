@@ -26,6 +26,8 @@ layout: notebook
 <li>Human steps in code</li>
 <li>Algorithms can be used for iteration or selection</li>
 <li>There are benefits and draw backs to all algorithms</li>
+<li>Algorithms add to efficeincy and effectiveness</li>
+<li>Binary search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half</li>
 </ul>
 
 </div>
