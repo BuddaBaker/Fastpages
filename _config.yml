@@ -10,7 +10,7 @@ title: Fastpages
 description: Jupyter post with fastpages
 github_username: BuddaBaker
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "FastPages"
+github_repo: "Fastpages"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
