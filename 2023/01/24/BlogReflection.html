@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -257,6 +257,7 @@ Symmetric encryption uses the same key to decrypt and encrypt data, while Asymme
 The main takeaways were that a sender in assymetric encryption has a public key to encrypt the data, then the reciever uses a private key to decrypt the data and understnad it. This means that if a hacker can intercept the message it means nothing because all they will have is cipher text which cannot be understood by them. This is why many companies perfer to use asymmetric over symmertric because of how much more secure it is.</p>
 <p><strong>Provide an example of encryption we used in AWS deployment.</strong>
 One example of encryption used in AWS deployment is the AWS Key Management Service (KMS). KMS is a fully managed service that enables you to create and control the encryption keys used to encrypt your data. You can use KMS to encrypt data at rest in EBS volumes, S3 buckets, RDS databases, and other AWS resources. KMS uses Advanced Encryption Standard (AES) 256-bit encryption keys to encrypt your data. These keys are themselves encrypted with a master key that is stored in hardware security modules (HSMs) and managed by AWS. By using KMS, you can ensure that your data is encrypted using strong encryption keys and that the keys themselves are protected by the highest level of security.</p>
+<p>For further reading I read: <a href="https://aws.amazon.com/security/">https://aws.amazon.com/security/</a> This article talks about security strategy that is used with AWS. The important steps are Prevent, Detect, Respond, Remidiate. The prevent step is about how we can stop the error before it even becomes a problem. This is a vital step in making sure to keep the server safe because if a problem isn't there then theres no need to take resources on fixing it. The Detect step focuses on finding what the error and the extent to which the damage has been done. Its important to do this step so that we can know what needs to be fixed in the future. The next step is Response which is where the security team comes up with ways to fix the issue and resolve it. The final step is to remidiate which is to fully fix the error and secure the AWS web server so that the problem is gone.</p>
 <p><strong>Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.</strong>
 A phising scheme I have learned about the hard way is how phishers send you an email and want you to click on a link which is unsafe. They disguise this is as a real message from a company and make it seem real with everything other than the email address and some aspects of the message. When you encounter a strange email its important to not click any links because thats how the phisphers get you. If you don't click any links than they have no control over you and you are pretty safe.</p>
 <p>For additonal reading I read this:<a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams">https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams</a>
